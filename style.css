@@ -1,0 +1,46 @@
+/* Page styling: center content and set background/theme */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #86838380;
+}
+
+/* Game board container, 7 columns x 6 rows */
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: #3956bd;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Default cell appearance */
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Red player's placed piece */
+.cell.red {
+    background-color: red;
+}
+
+/* Yellow player's placed piece */
+.cell.yellow {
+    background-color: yellow;
+}
+
+/* Restart button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #bd3939;
+}
